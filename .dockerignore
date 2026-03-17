@@ -1,0 +1,31 @@
+# Git
+.git
+.gitignore
+
+# Security
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Environments (Внутри докера мы будем ставить зависимости заново)
+.venv
+venv/
+env/
+
+# Docker config
+.dockerignore
+docker-compose.yml
+Dockerfile
+
+# IDEs
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+
+# Testing
+.pytest_cache/
+.coverage

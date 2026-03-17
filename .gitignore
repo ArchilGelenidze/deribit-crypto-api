@@ -1,0 +1,33 @@
+# Security (Никогда не пушим секреты!)
+.env
+.env.*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments
+.venv
+venv/
+env/
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+*.pid
+
+# IDEs (VS Code, PyCharm)
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
