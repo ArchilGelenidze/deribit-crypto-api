@@ -31,3 +31,7 @@ Thumbs.db
 .pytest_cache/
 .coverage
 htmlcov/
+
+# Logger
+app/logger_config/log_files
+*.log
