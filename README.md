@@ -20,12 +20,17 @@
 git clone https://gitlab.com/GelenidzeA/deribit-crypto-api.git
 ```
 
-2. Создайте файл переменных окружения из шаблона:
+2. Перейдите в нужную директорию:
+```bash
+cd deribit-crypto-api 
+```
+
+3. Создайте файл переменных окружения из шаблона:
 ``` bash
 cp .env.example .env
 ```
 
-3. Запустите оркестратор:
+4. Запустите оркестратор:
 ```bash
 docker compose up --build
 ```
