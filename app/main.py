@@ -1,4 +1,6 @@
 from fastapi import FastAPI
+from fastapi.responses import RedirectResponse
+
 from app.api.routers import router as prices_router
 
 app = FastAPI(
@@ -11,8 +13,8 @@ app = FastAPI(
 app.include_router(prices_router)
 
 
-@app.get("/check", tags=["Health check"])
+@app.get("/", include_in_schema=False)
 async def health_check():
-    return {"message": "API is running. Go to /docs to see the documentation."}
+    return RedirectResponse(url="/docs")
 
 

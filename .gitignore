@@ -1,6 +1,6 @@
 # Security (Никогда не пушим секреты!)
 .env
-.env.*
+
 
 # Python
 __pycache__/
