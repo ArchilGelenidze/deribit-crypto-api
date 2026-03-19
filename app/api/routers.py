@@ -25,7 +25,7 @@ router = APIRouter(prefix="/prices", tags=["Crypto prices"])
 )
 async def get_all_prices(
         ticker: TickerEnum = Query(..., description="Выберите тикер из списка", Examples=["btc_usd", "eth_usd"]),
-        limit: int = Query(50, ge=1, le=100, description="Количество записей для вывода"),
+        limit: int = Query(10, ge=1, le=100, description="Количество записей для вывода"),
         offset: int = Query(0, ge=0, description="Смещение (для пагинации)"),
         session: AsyncSession = Depends(get_db)
 ):
