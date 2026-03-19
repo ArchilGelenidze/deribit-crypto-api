@@ -35,3 +35,6 @@ htmlcov/
 # Logger
 app/logger_config/log_files
 *.log
+
+# Celery
+celerybeat-schedule*

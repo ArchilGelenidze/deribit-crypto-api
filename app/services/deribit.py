@@ -12,6 +12,8 @@ class DeribitClient:
     Клиент для работы с публичным API криптобиржи Deribit.
     """
     BASE_URL = "https://www.deribit.com/api/v2/public"
+    NEEDED_CRYPTO = ["btc_usd", "eth_usd"]
+
 
     async def get_index_price(self, ticker: str) -> Optional[Dict[str, Any]]:
         """
@@ -35,6 +37,7 @@ class DeribitClient:
                         return None  # explicitly
 
                     return {
+                        "ticker": ticker,
                         "price": Decimal(str(price)),
                         "timestamp": int(time.time())
                     }
