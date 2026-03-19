@@ -94,7 +94,7 @@ async def get_price_by_date(
         target_date: datetime = Query(
             ...,
             description="Дата и время в формате ISO 8601 (например, 2026-03-19T15:30:00)",
-            example="2026-03-19T15:30:00"
+            example="2026-06-27T15:30:00"
         ),
         session: AsyncSession = Depends(get_db)
 ):
