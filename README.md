@@ -17,7 +17,7 @@
 
 1. Склонируйте репозиторий:
 ```bash
-git clone https://gitlab.com/GelenidzeA/deribit-crypto-api.git
+git clone https://github.com/ArchilGelenidze/deribit-crypto-api.git
 ```
 
 2. Перейдите в нужную директорию:
